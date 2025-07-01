@@ -70,8 +70,6 @@
         </arguments>
     </virtualType>
 
-    <virtualType name="NoopHandler" type="Monolog\Handler\NullHandler"/>
-
     <virtualType name="SocketHandler" type="Opengento\Logger\Handler\SocketHandler">
         <arguments>
             <argument name="isEnabled" xsi:type="string">loggin/socket/is_enabled</argument>
@@ -100,7 +98,6 @@
                 <item name="console" xsi:type="object">ConsoleHandler</item>
                 <item name="logs" xsi:type="object">RotatingFileHandler</item>
                 <item name="slack" xsi:type="object">SlackHandler</item>
-                <item name="debug" xsi:type="object">NoopHandler</item>
                 <item name="socket" xsi:type="object">SocketHandler</item>
             </argument>
         </arguments>
